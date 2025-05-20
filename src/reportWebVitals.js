@@ -1,6 +1,8 @@
 const reportWebVitals = async (onPerfEntry) => {
   if (typeof onPerfEntry === "function") {
-    const { getCLS, getFID, getFCP, getLCP, getTTFB } = await import("web-vitals");
+    const { getCLS, getFID, getFCP, getLCP, getTTFB } = await import(
+      "web-vitals"
+    );
 
     getCLS(onPerfEntry);
     getFID(onPerfEntry);
